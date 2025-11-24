@@ -1,0 +1,115 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* Cabeçalho */
+header {
+  background: #111;
+  color: #fff;
+  padding: 1.5rem 0;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a.ativo {
+  color: #00b4d8;
+}
+
+/* Container dos carros */
+.carros-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 3rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Card de carro */
+.carro {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carro:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.carro img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.carro h2 {
+  font-size: 1.3rem;
+  color: #222;
+  margin: 1rem;
+}
+
+.carro p {
+  margin: 0.5rem 1rem;
+  line-height: 1.4;
+}
+
+.carro .desc {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+/* Botão */
+.btn {
+  display: inline-block;
+  background: #00b4d8;
+  color: white;
+  padding: 10px 20px;
+  margin: 1rem;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #0077b6;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background: #111;
+  color: #fff;
+  margin-top: 2rem;
+}
